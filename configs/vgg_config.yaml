@@ -1,0 +1,22 @@
+training_parameters:
+  epochs: 100
+  checkpoint_dir: "checkpoints"
+  learning_rate: 0.001
+  momentum: 0.9
+  weight_decay: 0.0005
+  optimizer: "Adam"
+  log_directory_name: "object_detector_adam"
+  use_validation: true
+  n_classes: 12
+
+dataset:
+  train_dataset_dir: "dataset/GroceryDataset_part1.tar-2/ShelfImages/train"
+  val_dataset_dir: "dataset/GroceryDataset_part1.tar-2/ShelfImages/train"
+  test_dataset_dir: "dataset/GroceryDataset_part1.tar-2/ShelfImages/test"
+
+  training_annotation: "dataset/GroceryDataset_part1.tar-2/ShelfImages/training_annotations_split.csv"
+  validation_annotation: "dataset/GroceryDataset_part1.tar-2/ShelfImages/validation_annotations_split.csv"
+  testing_annotation: "dataset/GroceryDataset_part1.tar-2/ShelfImages/testing_annotations.csv"
+  batch_size: 2
+
+
